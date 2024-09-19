@@ -2,7 +2,7 @@ import express from "express";
 import DEVICESREGISTRATION from "../models/DEVICESREGISTRATION.js";
 import MASTERSUBSCRIPTIONDETAILS from "../models/MASTERSUBSCRIPTIONDETAILS.js";
 
-
+s.k.vkmsd;kvmsdkvmsdvmskdvmsd;klksfvlksvlsklvlkvmsvk
 const router = express.Router();
 //Registeration
 router.post("/registersystem", async (req, res) => {
