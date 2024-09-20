@@ -38,6 +38,8 @@ const Section = ({children, title}) => {
           },
         ]}>
         {title}
+        hello hi
+
       </Text>
       <Text
         style={[
