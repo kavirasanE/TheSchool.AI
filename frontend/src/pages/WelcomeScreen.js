@@ -1,7 +1,7 @@
 import React  from 'react'
 import { Image, Text, View } from 'react-native'
 import Breadcrumb from '../utility/Breadcrumb'
-import bulb from "../assests/images/welcome"
+import bulb from "../assests/images/welcomebulb.png"
 const WelcomeScreen = () => {
 
     return (
