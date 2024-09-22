@@ -1,13 +1,21 @@
-import React from 'react'
-import {View,Text} from 'react-native'
-// import "./global.css"
+
+
+import React, { useState } from 'react';
+import {Text, View} from 'react-native';
+import TopNavigation from './src/navigation/TopNavigation';
+import BottomTabNavigation from './src/navigation/BottomTabNavigation';
 
 const App = () => {
-  return (
-    <View className="bg-black">
-      <Text className="text-blue-700 text-2xl font-bold">The Shool.AI</Text>
-    </View>
-  )
-}
+   
+  return(
+    <>
 
-export default App
+    {/* <TopNavigation /> */}
+    <BottomTabNavigation />
+    </>
+  ) 
+    
+};
+
+export default App;
+
