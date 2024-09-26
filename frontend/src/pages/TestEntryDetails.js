@@ -60,8 +60,8 @@ const TestEntryDetails = () => {
 
   return (
     <View>
+     
       <Breadcrumb />
-
       {data.map((dropdownData, index) => (
         <View
           className="flex flex-row justify-between items-center m-5"

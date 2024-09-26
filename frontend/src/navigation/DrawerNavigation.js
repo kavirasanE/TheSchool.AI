@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 // import Icon from 'react-native-vector-icons/EvilIcons';
 import Icon from 'react-native-vector-icons/Ionicons';
+import BottomTabNavigation from './BottomTabNavigation';
 
 
 const DrawerNavigation = () => {
@@ -37,7 +38,8 @@ const DrawerNavigation = () => {
       drawerWidth={300}
       drawerPosition={drawerPosition}
       renderNavigationView={navigationView}>
-      <View style={styles.container}>
+      <View >
+      {/* style={styles.container} */}
         {/* <Text style={styles.paragraph}>Drawer on the {drawerPosition}!</Text>
         <Button
           title="Change Drawer Position"
@@ -52,21 +54,20 @@ const DrawerNavigation = () => {
         />
       {/* <Icon name="chart" size={30} color="#900" /> */}
       <Icon name="home" size={30} color="#4F8EF7" />
-    
-     
+      
       </View>
     </DrawerLayoutAndroid>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    display:'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'center',
-    padding:16
+  // container: {
+  //   display:'flex',
+  //   alignItems: 'flex-start',
+  //   justifyContent: 'center',
+  //   padding:16
 
-  },
+  // },
   navigationContainer: {
     backgroundColor: '#ecf0f1',
   },
