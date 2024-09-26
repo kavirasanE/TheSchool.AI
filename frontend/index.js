@@ -7,9 +7,11 @@ import App from './App';
 export default function index() {
   return (
     <PaperProvider>
-      <App />
+      <App  />
     </PaperProvider>
   );
 }
+
+
 
 AppRegistry.registerComponent(appName, () => App);
