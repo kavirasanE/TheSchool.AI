@@ -3,6 +3,7 @@ import {Text, View} from 'react-native';
 import {DataTable} from 'react-native-paper';
 import Breadcrumb from '../utility/Breadcrumb';
 import { StyleSheet } from 'react-native';
+import HeaderNavigation from '../navigation/HeaderNavigation';
 const TestHistory = () => {
   const tableHead = ['Header 1', 'Header 2', 'Header 3'];
   const tableData = [
@@ -13,9 +14,9 @@ const TestHistory = () => {
 
   return (
     <View>
+      <HeaderNavigation/>
       <Breadcrumb />
       <Text className="font-semibold text-lg my-4 text-black/90">
-        {' '}
         Your Test Insights
       </Text>
       <DataTable style={styles.container} >

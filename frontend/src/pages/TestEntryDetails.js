@@ -3,8 +3,9 @@ import { Text, View } from 'react-native';
 import { RadioButton, TextInput , Button as NativeButton } from 'react-native-paper';
 import { Dropdown } from 'react-native-element-dropdown';
 import Breadcrumb from '../utility/Breadcrumb';
+import HeaderNavigation from '../navigation/HeaderNavigation';
 
-const TestEntryDetails = () => {
+const TestEntryDetails = ({navigation}) => {
   const data = [
     {
       title: 'Subject',
@@ -45,6 +46,7 @@ const TestEntryDetails = () => {
     { label: 'Item 8', value: '8' },
   ];
 
+  
   // Separate state for each dropdown
   const [dropdownValues, setDropdownValues] = useState({});
   const [radioValue, setRadioValue] = useState('first');
@@ -58,13 +60,17 @@ const TestEntryDetails = () => {
     }));
   };
 
+  const handleTestPage = () => {
+    navigation.navigate("TestPage")
+  }
+
   return (
     <View>
-     
+      <HeaderNavigation/>
       <Breadcrumb />
       {data.map((dropdownData, index) => (
         <View
-          className="flex flex-row justify-between items-center m-5"
+          className="flex flex-row justify-between items-center mx-5 my-2"
           key={index}>
           <Text className="text-black text-xl">{dropdownData.title}</Text>
           <Dropdown
@@ -82,12 +88,12 @@ const TestEntryDetails = () => {
         </View>
       ))}
 
-      <View className="flex flex-row justify-between items-center m-5">
+      <View className="flex flex-row justify-between items-center mx-2">
         <Text className="text-black text-xl">Questions</Text>
         <RadioButton.Group
           onValueChange={(newValue) => setRadioValue(newValue)}
           value={radioValue}>
-          <View className="flex flex-row justify-start items-center w-60 my-5">
+          <View className="flex flex-row justify-start items-center w-60 my-2">
             <RadioButton value="Last" />
             <View className="flex flex-row justify-center items-center ">
               <Text className="text-black text-lg font-semibold">Last </Text>
@@ -132,7 +138,7 @@ const TestEntryDetails = () => {
           </View>
         </RadioButton.Group>
       </View>
- <NativeButton   mode="contained" className="bg-blue-600 p-2 mx-5"> Start the Test</NativeButton>
+ <NativeButton   mode="contained" className="bg-blue-600 p-2 mx-5"  onPress={handleTestPage}> Start the Test</NativeButton>
       
     </View>
   );
