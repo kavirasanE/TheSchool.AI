@@ -4,7 +4,7 @@ import {Button as NativeButton} from 'react-native-paper';
 
 const GetStarted = ({navigation}) => {
   const handleNext = () => {
-    navigation.navigate('Test');
+    navigation.navigate('TabNavigator');
   };
   return (
     <View className="flex-1">
