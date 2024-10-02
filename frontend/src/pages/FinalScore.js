@@ -11,7 +11,7 @@ const FinalScore = () => {
       <Breadcrumb />
       <View className="m-2">
         <Text className="font-semibold text-lg my-4 text-black/90">
-          You have scored 17 out of 30 marks. If you want to review your
+          You have scored 37 out of 50 marks. If you want to review your
           answers, please check here.
         </Text>
         <Text className="font-semibold text-lg my-2 text-black/90">
@@ -28,7 +28,7 @@ const FinalScore = () => {
       </View>
       <View className="h-40 mx-20 mt-5  rounded-2xl border-2 border-black flex   justify-center items-center">
         <Text className="font-semibold text-4xl my-4 text-black/90">Your Score</Text>
-        <Text className="font-semibold text-4xl my-4 text-black/90">17/30</Text>
+        <Text className="font-semibold text-4xl my-4 text-black/90">37/50</Text>
       </View>
     </View>
   );
