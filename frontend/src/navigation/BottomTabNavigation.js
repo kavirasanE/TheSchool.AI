@@ -3,17 +3,17 @@ import React from 'react';
 import TestEntryDetails from '../pages/TestEntryDetails';
 import WelcomeScreen from '../pages/WelcomeScreen';
 import TestHistory from '../pages/TestHistory';
+
 import Ionicons from 'react-native-vector-icons/Ionicons';
+
 
 import TestStackNavigation from './TestStackNavigation';
 import StudyStackNavigation from './StudyStackNavigation';
 
 const Tab = createBottomTabNavigator();
 
+
 const BottomTabNavigation = () => {
-  {
-    /* <HeaderNavigation/> */
-  }
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
