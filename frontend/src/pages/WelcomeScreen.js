@@ -1,6 +1,6 @@
 import React  from 'react'
 import { Image, Text, View } from 'react-native'
-import bulb from "../assests/images/welcomebulb.png"
+import bulb from "../assets/images/welcomebulb.png"
 import {globalStyles} from "../Theme/AppTheme"
 import HeaderNavigation from '../navigation/HeaderNavigation'
 const WelcomeScreen = ({navigation}) => {
