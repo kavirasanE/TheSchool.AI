@@ -10,7 +10,7 @@ const Stack =createNativeStackNavigator();
 
 const TestStackNavigation = () => {
   return (
-    <Stack.Navigator options={{headerShown: false}}>
+    <Stack.Navigator   options={{headerShown: false}}>
         <Stack.Screen name='TestStart' component={TestScreen} options={{headerShown: false}}/>
         <Stack.Screen  name='TestDetails' component={TestEntryDetails} options={{headerShown: false}}/>
         <Stack.Screen  name='TestPage' component={TestPage} options={{headerShown: false}}/>

@@ -17,8 +17,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 const WelcomeScreen = ({navigation}) => {
   const data = [
-    {name: 'Take a Test', img: test},
-    {name: 'Study Now', img: study},
+    {name: 'Take a Test', img: test, route:"Test"},
+    {name: 'Study Now', img: study, route:"Study"},
   ];
 
   const dataContinue = [
@@ -73,7 +73,9 @@ const WelcomeScreen = ({navigation}) => {
                 borderRadius: 20,
                 marginHorizontal: 10,
                 borderColor: 'black',
-              }}>
+              }}
+              onPress={() => navigation.navigate(item.route)}
+              >
               <Image
                 source={item.img}
                 style={{width: '100%', height: '100%', borderRadius: 20}}
