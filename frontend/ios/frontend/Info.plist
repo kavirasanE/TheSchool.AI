@@ -53,13 +53,12 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Oswald SemiBold.ttf</string>
-		<string>Oswald-Bold.ttf</string>
-		<string>Oswald-ExtraLight.ttf</string>
-		<string>Oswald-Light.ttf</string>
-		<string>Oswald-Medium.ttf</string>
-		<string>Oswald-Regular.ttf</string>
 		<string>Poppins ExtraBold.ttf</string>
+		<string>Poppins Italic.ttf</string>
+		<string>Poppins LightItalic.ttf</string>
+		<string>Poppins Medium.ttf</string>
+		<string>Poppins MediumItalic.ttf</string>
+		<string>Poppins SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

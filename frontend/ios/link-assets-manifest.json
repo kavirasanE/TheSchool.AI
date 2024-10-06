@@ -2,32 +2,28 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/Oswald SemiBold.ttf",
-      "sha1": "10d1c319ab0685f35f3c9eb87a9524de0560345e"
-    },
-    {
-      "path": "src/assets/fonts/Oswald-Bold.ttf",
-      "sha1": "6e78c90d65a6133d979daebc1255d2f560a97c79"
-    },
-    {
-      "path": "src/assets/fonts/Oswald-ExtraLight.ttf",
-      "sha1": "ac9323c6f3e5965bbeee4c57db7b78d8d67c9d1b"
-    },
-    {
-      "path": "src/assets/fonts/Oswald-Light.ttf",
-      "sha1": "18b6fe10677763e882985371a015bdc45ec2943c"
-    },
-    {
-      "path": "src/assets/fonts/Oswald-Medium.ttf",
-      "sha1": "70e75da33d777c839cf59cb042adf7fc5fa0235a"
-    },
-    {
-      "path": "src/assets/fonts/Oswald-Regular.ttf",
-      "sha1": "06aae8f5a28908ba8eca0d5bdc01cedc2a184a5f"
-    },
-    {
       "path": "src/assets/fonts/Poppins ExtraBold.ttf",
       "sha1": "4b5c0750f073abd576413a0898d3b95adaf199c8"
+    },
+    {
+      "path": "src/assets/fonts/Poppins Italic.ttf",
+      "sha1": "e2bfcd56016c3c915221ef1c5fc1a17b0776eb91"
+    },
+    {
+      "path": "src/assets/fonts/Poppins LightItalic.ttf",
+      "sha1": "f76102b361e705751a83b7b22fe954daf1f27dd4"
+    },
+    {
+      "path": "src/assets/fonts/Poppins Medium.ttf",
+      "sha1": "283f21b44efbdbf276ba802be2d949a36bbc4233"
+    },
+    {
+      "path": "src/assets/fonts/Poppins MediumItalic.ttf",
+      "sha1": "b592c62fdf88c40cfd0f031bba6423b1d4430472"
+    },
+    {
+      "path": "src/assets/fonts/Poppins SemiBold.ttf",
+      "sha1": "8a4ace9392d06bcb7f8ea2f5169b07e4c383a90d"
     }
   ]
 }

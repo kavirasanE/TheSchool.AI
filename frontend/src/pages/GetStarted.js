@@ -10,6 +10,9 @@ const styles =StyleSheet.create({
   },
   linear :{
     backgroundColor:"linear-gradient(180deg, rgba(255,255,255,0.5243347338935574) 0%, rgba(242,242,248,1) 100%, rgba(252,254,255,0.4515056022408963) 100%)" 
+  },
+  nextroot:{
+    fontFamily: 'Poppins Medium'
   }
 })
 
@@ -31,7 +34,7 @@ const GetStarted = ({navigation}) => {
       </Text>
       
       <View className="absolute  w-full  bottom-0 bg-white rounded-t-3xl">
-     <Text className="m-3 text-black text-xl text-center my-10" style={styles.root}>Unlock your potential with The Skool!
+     <Text className="m-3 text-black text-xl text-center my-10 " style={styles.nextroot}>Unlock your potential with The Skool!
      Personalized courses to help you start or advance your learning journey. </Text>
         <NativeButton
           mode="contained"

@@ -3,15 +3,11 @@ import React from 'react';
 import TestEntryDetails from '../pages/TestEntryDetails';
 import WelcomeScreen from '../pages/WelcomeScreen';
 import TestHistory from '../pages/TestHistory';
-
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
-
 import TestStackNavigation from './TestStackNavigation';
 import StudyStackNavigation from './StudyStackNavigation';
 
 const Tab = createBottomTabNavigator();
-
 
 const BottomTabNavigation = () => {
   return (
@@ -39,6 +35,7 @@ const BottomTabNavigation = () => {
         tabBarLabelStyle: {
           fontSize: 16,
           fontWeight: '600',
+          fontFamily: 'Poppins Medium',
         },
         tabBarStyle: {
           height: 75,
@@ -55,6 +52,7 @@ const BottomTabNavigation = () => {
       <Tab.Screen
         name="Home"
         component={WelcomeScreen}
+
         // options={{
         //   tabBarButton: () => null,
         // }}
