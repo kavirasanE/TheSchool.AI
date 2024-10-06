@@ -12,25 +12,20 @@ const TestPage = ({navigation}) => {
      navigation.navigate("FinalScore")
   }
   return (
-    <View className=" flex-1 px-2">
-      <HeaderNavigation/>
-      <Breadcrumb />
+    <View style={{flex:1,backgroundColor:"white",padding:10}}>
+     
       <Questions />
       <Answer />
 
       <View className=" mt-1 ">
         <NativeButton
           mode="contained"
-          className=" mx-5 text-white bg-blue-600 hover:bg-blue-800 
-          focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm 
-          p-1 m-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+          style={{margin: 15, padding: 5, marginVertical: 20,borderRadius:50,backgroundColor:"#3442e0"}}>
           <Text className="text-xl"> Submit and Next </Text>
         </NativeButton>
         <NativeButton
           mode="contained"
-          className=" mx-5 text-white bg-green-500 hover:bg-blue-800 
-          focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm 
-         p-1 m-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          style={{margin: 15,padding:5, marginVertical: 20,borderRadius:50,backgroundColor:"#3ec503"}}
           onPress={handleFinalSubmit}>
           <Text className="text-xl" > Final Submit</Text>
         </NativeButton>

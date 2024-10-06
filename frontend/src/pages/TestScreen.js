@@ -5,6 +5,7 @@ import {Button as NativeButton} from 'react-native-paper';
 import HeaderNavigation from '../navigation/HeaderNavigation';
 import {useNavigation} from '@react-navigation/native';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 const TestScreen = () => {
   const navigation = useNavigation();
 
@@ -18,67 +19,94 @@ const TestScreen = () => {
         style={{
           position: 'relative',
           flexDirection: 'row',
-          
         }}>
         <Image
           source={require('../assets/images/gradientbg.png')}
           resizeMode="cover"
         />
-          <View
-      style={{
-        position: 'absolute',
-        left: 0,
-        top: 200,
-        backgroundColor: 'white',
-        width: '100%',        // Adjust width to suit the layout
-        height: "100%",   
-        // Adjust height as per your requirement
-        borderRadius: 20,   
-        direction:"flex",
-        flexDirection:"column",
-         // Optional: For rounded corners
-      }}
-    >
-       <NativeButton
-    mode="contained"
-    onPress={handleNext}
-    className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Take a Test </Text>
-  </NativeButton>
-  <NativeButton mode="contained" className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Past Test </Text>
-  </NativeButton>
-  <NativeButton mode="contained" className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Define Test/Exam portion</Text>
-  </NativeButton>
-      
-    </View>
-      
+        <Ionicons
+          name="chevron-back-outline"
+          size={40}
+          color="black"
+             onPress={() => { navigation.navigate('Home')}}
+          style={{position: 'absolute', left: 20, top: 20,backgroundColor:"white",borderRadius:50 ,padding:2}}
+        />
+
+        <Text
+          style={{
+            position: 'absolute',
+            left: 20,
+            top: 100,
+            padding: 5,
+            fontSize: 30,
+            color: 'white',
+            borderRadius: 5,
+            textAlign: 'center',
+            fontFamily: 'Poppins SemiBold',
+          }}>
+          {' '}
+          Select your Options
+        </Text>
+        <View
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 200,
+            backgroundColor: 'white',
+            width: '100%',
+            height: '100%',
+            borderRadius: 20,
+            direction: 'flex',
+            flexDirection: 'column',
+            paddingTop: 50,
+            alignContent: 'center',
+          }}>
+          <NativeButton
+            mode="contained"
+            onPress={handleNext}
+            style={{
+              margin: 15,
+              marginVertical: 20,
+              padding: 10,
+              borderRadius: 50,
+              backgroundColor: '#3442e0',
+            }}>
+            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
+              {' '}
+              Take a Test{' '}
+            </Text>
+          </NativeButton>
+          <NativeButton
+            mode="contained"
+            style={{
+              margin: 15,
+              padding: 10,
+              marginVertical: 20,
+              borderRadius: 50,
+              backgroundColor: '#3442e0',
+            }}>
+            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
+              {' '}
+              Past Test{' '}
+            </Text>
+          </NativeButton>
+          <NativeButton
+            mode="contained"
+            style={{
+              margin: 15,
+              padding: 10,
+              marginVertical: 20,
+              borderRadius: 50,
+              backgroundColor: '#3442e0',
+            }}>
+            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
+              Define Test/Exam portion
+            </Text>
+          </NativeButton>
+        </View>
       </View>
     </SafeAreaView>
   );
 };
 
 export default TestScreen;
-
-{
-  /* <View>
-<HeaderNavigation />
-<Breadcrumb />
-
-<View className="flex flex-col justify-center gap-y-10 mx-10 mt-10">
-  <NativeButton
-    mode="contained"
-    onPress={handleNext}
-    className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Take a Test </Text>
-  </NativeButton>
-  <NativeButton mode="contained" className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Past Test </Text>
-  </NativeButton>
-  <NativeButton mode="contained" className="bg-blue-500 p-2 ">
-    <Text className="text-xl"> Define Test/Exam portion</Text>
-  </NativeButton>
-</View>
-</View> */
-}

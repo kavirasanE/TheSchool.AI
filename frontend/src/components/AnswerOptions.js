@@ -10,19 +10,19 @@ const AnswerOptions = () => {
        <RadioButton.Group onValueChange={newValue => setValue(newValue)} value={value}>
       <View className ="flex flex-row justify-start items-center mx-5 my-2">
       <RadioButton value="first" className="w-4"/>
-        <Text className="text-xl text-black ">First Option</Text>
+        <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>First Option</Text>
        </View>
        <View className ="flex flex-row justify-start items-center mx-5 my-2">
-      <RadioButton value="first" className="w-4"/>
-        <Text className="text-xl text-black ">Second Option</Text>
+      <RadioButton value="second" className="w-4"/>
+        <Text  style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Second Option</Text>
        </View>
        <View className ="flex flex-row justify-start items-center mx-5 my-2">
-      <RadioButton value="first" className="w-4"/>
-        <Text className="text-xl text-black ">Thrid Option</Text>
+      <RadioButton value="third" className="w-4"/>
+        <Text  style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Thrid Option</Text>
        </View>
        <View className ="flex flex-row justify-start items-center mx-5 my-2">
-      <RadioButton value="first" className="w-4"/>
-        <Text className="text-xl text-black ">Fourth Option</Text>
+      <RadioButton value="fourth" className="w-4"/>
+        <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Fourth Option</Text>
        </View>
 
       {/* <View>

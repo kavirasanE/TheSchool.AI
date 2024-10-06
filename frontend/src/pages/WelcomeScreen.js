@@ -50,7 +50,7 @@ const WelcomeScreen = ({navigation}) => {
       </View>
       <Text
         style={{fontSize: 30, fontWeight: '500', marginHorizontal: 10, color: 'black',fontFamily: 'Poppins Medium' }}>
-        Let's Learn Something New..
+        Let's Learn Something New....
       </Text>
       <FlatList
         data={data}
@@ -89,9 +89,8 @@ const WelcomeScreen = ({navigation}) => {
                   right: 0,
                   textAlign: 'left',
                   color: 'black',
-                  fontWeight: '400',
                   fontFamily: 'Poppins Medium',
-                  fontSize: 24,
+                  fontSize: 22,
                   paddingHorizontal: 10,
                   paddingVertical: 5,
                   borderRadius: 20,
@@ -106,7 +105,6 @@ const WelcomeScreen = ({navigation}) => {
                   right: 0,
                   textAlign: 'left',
                   color: 'black',
-                  fontWeight: '200',
                   fontFamily: 'Poppins Medium',
                   width: 150,
                   paddingHorizontal: 10,
