@@ -1,6 +1,10 @@
 to run locally 
 //npx react-native run-android
 
+// to get the apk file 
+cd android
+./gradlew assembleRelease
+
 PS D:\theschool.ai\frontend> keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 Enter keystore password:  
 Re-enter new password: 
