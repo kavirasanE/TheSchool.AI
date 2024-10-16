@@ -8,6 +8,7 @@ import {
 import {Dropdown} from 'react-native-element-dropdown';
 import Breadcrumb from '../utility/Breadcrumb';
 import HeaderNavigation from '../navigation/HeaderNavigation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const TestEntryDetails = ({navigation}) => {
   const data = [
@@ -68,19 +69,81 @@ const TestEntryDetails = ({navigation}) => {
   };
 
   return (
-    <View style={{backgroundColor:"white", flex:1}}>
-        
-      <Text style={{fontFamily: 'Poppins Medium', fontSize: 25,color:"black",margin:20, marginTop:50}}>Enter Your Test Details</Text>
+    <View style={{backgroundColor: 'white', flex: 1, margin: 5}}>
+      <View
+        style={{
+          direction: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignContent: 'center',
+        }}>
+        <Ionicons
+          name="chevron-back-outline"
+          size={40}
+          color="black"
+          onPress={() => {
+            navigation.navigate('TestStart');
+          }}
+          style={{
+            position: 'absolute',
+            left: 10,
+            top: 20,
+            backgroundColor: 'white',
+            borderRadius: 50,
+            padding: 2,
+          }}
+        />
+        <Ionicons
+          name="medal-outline"
+          size={30}
+          color="black"
+          onPress={() => {
+            navigation.navigate('Home');
+          }}
+          style={{
+            position: 'absolute',
+            right: 20,
+            top: 30,
+            backgroundColor: 'white',
+            borderRadius: 50,
+            padding: 2,
+          }}
+        />
+      </View>
+
+      <Text
+        style={{
+          fontFamily: 'Poppins Medium',
+          fontSize: 25,
+          color: 'black',
+          margin: 20,
+          marginTop: 70,
+        }}>
+        Enter Your Test Details
+      </Text>
       {data.map((dropdownData, index) => (
         <View
           className="flex flex-row justify-between items-center mx-5 my-2"
-         
           key={index}>
-          <Text  style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>{dropdownData.title}</Text>
+          <Text
+            style={{
+              fontFamily: 'Poppins Medium',
+              fontSize: 18,
+              color: 'black',
+            }}>
+            {dropdownData.title}
+          </Text>
           <Dropdown
             data={dropdownData.options}
             // className="w-4/6 border p-2 rounded-sm"
-            style={{fontFamily: 'Poppins Medium', fontSize: 18,borderRadius:4, width:"60%",padding:10,borderWidth:1}}
+            style={{
+              fontFamily: 'Poppins Medium',
+              fontSize: 18,
+              borderRadius: 4,
+              width: '60%',
+              padding: 10,
+              borderWidth: 1,
+            }}
             search
             maxHeight={300}
             labelField="label"
@@ -94,35 +157,68 @@ const TestEntryDetails = ({navigation}) => {
       ))}
 
       <View className="flex flex-row justify-between items-center mx-5">
-        <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Questions</Text>
+        <Text
+          style={{fontFamily: 'Poppins Medium', fontSize: 18, color: 'black'}}>
+          Questions
+        </Text>
         <RadioButton.Group
           onValueChange={newValue => setRadioValue(newValue)}
           value={radioValue}>
           <View className="flex flex-row justify-start items-center w-60 my-2">
             <RadioButton value="Last" />
             <View className="flex flex-row justify-center items-center ">
-              <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Last </Text>
+              <Text
+                style={{
+                  fontFamily: 'Poppins Medium',
+                  fontSize: 18,
+                  color: 'black',
+                }}>
+                Last{' '}
+              </Text>
               <TextInput
                 mode="outlined"
                 label="no of Years"
                 placeholder=""
                 className="w-20 h-5"
               />
-              <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}> Years </Text>
+              <Text
+                style={{
+                  fontFamily: 'Poppins Medium',
+                  fontSize: 18,
+                  color: 'black',
+                }}>
+                {' '}
+                Years{' '}
+              </Text>
             </View>
           </View>
 
           <View className="flex flex-row justify-start items-center w-60 my-5">
             <RadioButton value="random" />
             <View className="flex flex-row justify-center items-center">
-              <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}>Random </Text>
+              <Text
+                style={{
+                  fontFamily: 'Poppins Medium',
+                  fontSize: 18,
+                  color: 'black',
+                }}>
+                Random{' '}
+              </Text>
               <TextInput
                 mode="outlined"
                 label="no of Years"
                 placeholder=""
                 className="w-20 h-5"
               />
-              <Text style={{fontFamily: 'Poppins Medium', fontSize: 18,color:"black"}}> Years </Text>
+              <Text
+                style={{
+                  fontFamily: 'Poppins Medium',
+                  fontSize: 18,
+                  color: 'black',
+                }}>
+                {' '}
+                Years{' '}
+              </Text>
             </View>
           </View>
 
@@ -145,10 +241,17 @@ const TestEntryDetails = ({navigation}) => {
       </View>
       <NativeButton
         mode="contained"
-        style={{margin: 15, padding: 10, marginVertical: 20,borderRadius:50,backgroundColor:"#3442e0"}}
+        className=" mx-5 rounded-full 
+          px-5 py-1 "
+        style={{backgroundColor: '#3442e0', marginVertical: 20}}
         onPress={handleTestPage}>
-       
-        <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>Start the Test</Text> 
+        <Text
+          style={{
+            fontFamily: 'Poppins Medium',
+            fontSize: 15,
+          }}>
+          Start the Test
+        </Text>
       </NativeButton>
     </View>
   );

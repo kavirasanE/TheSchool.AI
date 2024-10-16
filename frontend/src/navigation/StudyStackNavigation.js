@@ -15,9 +15,9 @@ const StudyStackNavigation = () => {
         component={TestScreen}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="TestDetails" component={TestEntryDetails} />
-      <Stack.Screen name="TestPage" component={TestPage} />
-      <Stack.Screen name="FinalScore" component={FinalScore} />
+      <Stack.Screen name="TestDetails" component={TestEntryDetails}  options={{headerShown: false}}/>
+      <Stack.Screen name="TestPage" component={TestPage}  options={{headerShown: false}} />
+      <Stack.Screen name="FinalScore" component={FinalScore}  options={{headerShown: false}} />
     </Stack.Navigator>
   );
 };

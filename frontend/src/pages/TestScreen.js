@@ -26,17 +26,26 @@ const TestScreen = () => {
         />
         <Ionicons
           name="chevron-back-outline"
-          size={40}
+          size={30}
           color="black"
-             onPress={() => { navigation.navigate('Home')}}
-          style={{position: 'absolute', left: 20, top: 20,backgroundColor:"white",borderRadius:50 ,padding:2}}
+          onPress={() => {
+            navigation.navigate('Home');
+          }}
+          style={{
+            position: 'absolute',
+            left: 20,
+            top: 20,
+            backgroundColor: 'white',
+            borderRadius: 50,
+            padding: 2,
+          }}
         />
 
         <Text
           style={{
             position: 'absolute',
             left: 20,
-            top: 100,
+            top: 90,
             padding: 5,
             fontSize: 30,
             color: 'white',
@@ -51,7 +60,7 @@ const TestScreen = () => {
           style={{
             position: 'absolute',
             left: 0,
-            top: 200,
+            top: 180,
             backgroundColor: 'white',
             width: '100%',
             height: '100%',
@@ -64,43 +73,45 @@ const TestScreen = () => {
           <NativeButton
             mode="contained"
             onPress={handleNext}
-            style={{
-              margin: 15,
-              marginVertical: 20,
-              padding: 10,
-              borderRadius: 50,
-              backgroundColor: '#3442e0',
-            }}>
-            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
+            className=" mx-5 rounded-full 
+          px-5 py-1 "
+            style={{backgroundColor: '#3442e0', marginVertical: 20}}>
+            <Text
+              style={{
+                fontFamily: 'Poppins Medium',
+                fontSize: 15,
+              }}>
               {' '}
               Take a Test{' '}
             </Text>
           </NativeButton>
           <NativeButton
             mode="contained"
-            style={{
-              margin: 15,
-              padding: 10,
-              marginVertical: 20,
-              borderRadius: 50,
-              backgroundColor: '#3442e0',
-            }}>
-            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
+            onPress={handleNext}
+            className=" mx-5 rounded-full 
+          px-5 py-1 "
+            style={{backgroundColor: '#3442e0', marginVertical: 20}}>
+            <Text
+              style={{
+                fontFamily: 'Poppins Medium',
+                fontSize: 15,
+              }}>
               {' '}
               Past Test{' '}
             </Text>
           </NativeButton>
           <NativeButton
             mode="contained"
-            style={{
-              margin: 15,
-              padding: 10,
-              marginVertical: 20,
-              borderRadius: 50,
-              backgroundColor: '#3442e0',
-            }}>
-            <Text style={{fontFamily: 'Poppins Medium', fontSize: 18}}>
-              Define Test/Exam portion
+            onPress={handleNext}
+            className=" mx-5 rounded-full 
+          px-5 py-1"
+            style={{backgroundColor: '#3442e0', marginVertical: 20}}>
+            <Text
+              style={{
+                fontFamily: 'Poppins Medium',
+                fontSize: 15,
+              }}>
+              Define Test/Exam portion{' '}
             </Text>
           </NativeButton>
         </View>

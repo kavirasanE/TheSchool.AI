@@ -30,18 +30,21 @@ const BottomTabNavigation = () => {
             return <Ionicons name={iconName} size={25} color={color} />;
           }
         },
-        tabBarActiveTintColor: '#404040',
-        tabBarInactiveTintColor: '#808080',
+        tabBarActiveTintColor: '#3442e0',
+        tabBarInactiveTintColor: '#737373',
         tabBarLabelStyle: {
-          fontSize: 16,
-          fontWeight: '600',
+          fontSize: 13,
           fontFamily: 'Poppins Medium',
         },
         tabBarStyle: {
           height: 75,
           paddingBottom: 10,
           paddingTop: 10,
-          // backgroundColor:"#FADADD"
+          borderTopLeftRadius: 30,    // Round top-left corner
+          borderTopRightRadius: 30,   // Round top-right corner
+          backgroundColor: "white", // Background color of the tab bar
+          position: 'absolute',       // Keep the tab bar floating above content
+          borderTopWidth: 0,          
         },
         headerShown: false,
       })}>

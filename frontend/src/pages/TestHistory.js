@@ -29,7 +29,7 @@ const TestHistory = () => {
         }}>
         <Ionicons
           name="chevron-back-outline"
-          size={40}
+          size={30}
           color="black"
           onPress={() => {
             navigation.navigate('Home');
@@ -42,7 +42,7 @@ const TestHistory = () => {
         <Text
           style={{
             fontFamily: 'Poppins Medium',
-            fontSize: 25,
+            fontSize: 20,
             color: 'black',
             
           }}>
