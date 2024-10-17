@@ -18,6 +18,7 @@ const Breadcrumb = () => {
     },
   ];
 
+  
   return (
     <View className="flex flex-row justify-start items-center p-4">
       {data.map((routes, index) => (

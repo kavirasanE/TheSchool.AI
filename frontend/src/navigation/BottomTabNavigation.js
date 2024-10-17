@@ -3,55 +3,13 @@ import React from 'react';
 import TestEntryDetails from '../pages/TestEntryDetails';
 import WelcomeScreen from '../pages/WelcomeScreen';
 import TestHistory from '../pages/TestHistory';
-
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
-
 import TestStackNavigation from './TestStackNavigation';
 import StudyStackNavigation from './StudyStackNavigation';
 
 const Tab = createBottomTabNavigator();
 
-
 const BottomTabNavigation = () => {
-  {
-
-                if(route.name === "Test") {
-                  iconName =focused ? "clipboard" : "clipboard-outline"
-                  return <Ionicons name={iconName} size={30} color={color}/>
-                } else if(route.name === "Study") {
-                  iconName =focused ? "book" : "book-outline"
-                  return <Ionicons name={iconName} size={30} color={color}/>
-                } else if(route.name === "Insights") {
-                  iconName =focused ? "pie-chart" : "pie-chart-outline"
-                  return <Ionicons name={iconName} size={30} color={color}/>
-                }
-              },
-              tabBarActiveTintColor:"#404040",
-              tabBarInactiveTintColor: "#808080",
-              tabBarLabelStyle :{
-                fontSize :16,
-                fontWeight: '600',
-              },
-             tabBarStyle :{
-              height:75,
-              paddingBottom :10,
-              paddingTop:10,
-              // backgroundColor:"#FADADD"
-             },
-             headerShown:false
-            
-         })}>
-          
-          <Tab.Screen name='Test' component={FinalScore}   />
-          <Tab.Screen name='Study' component={TestEntryDetails}/>
-          <Tab.Screen name='Insights' component={WelcomeScreen}/>
-         </Tab.Navigator>
-         </NavigationContainer>
-     
-    )
-
-  }
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
@@ -72,17 +30,21 @@ const BottomTabNavigation = () => {
             return <Ionicons name={iconName} size={25} color={color} />;
           }
         },
-        tabBarActiveTintColor: '#404040',
-        tabBarInactiveTintColor: '#808080',
+        tabBarActiveTintColor: '#3442e0',
+        tabBarInactiveTintColor: '#737373',
         tabBarLabelStyle: {
-          fontSize: 16,
-          fontWeight: '600',
+          fontSize: 13,
+          fontFamily: 'Poppins Medium',
         },
         tabBarStyle: {
           height: 75,
           paddingBottom: 10,
           paddingTop: 10,
-          // backgroundColor:"#FADADD"
+          borderTopLeftRadius: 30,    // Round top-left corner
+          borderTopRightRadius: 30,   // Round top-right corner
+          backgroundColor: "white", // Background color of the tab bar
+          position: 'absolute',       // Keep the tab bar floating above content
+          borderTopWidth: 0,          
         },
         headerShown: false,
       })}>
@@ -93,6 +55,7 @@ const BottomTabNavigation = () => {
       <Tab.Screen
         name="Home"
         component={WelcomeScreen}
+
         // options={{
         //   tabBarButton: () => null,
         // }}

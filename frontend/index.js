@@ -4,6 +4,7 @@ import { PaperProvider } from 'react-native-paper';
 import { name as appName } from './app.json';
 import App from './App';
 
+
 export default function index() {
   return (
     <PaperProvider>
